@@ -14,7 +14,7 @@ class AccueilController extends AbstractController
     public function index(): Response
     {
         return $this->render('accueil/index.html.twig', [
-            'controller_name' => 'AccueilController', 'datedujour' => '3',
+            'controller_name' => 'AccueilController',
         ]);
     }
 }
