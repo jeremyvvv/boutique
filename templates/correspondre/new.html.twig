@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Correspondre{% endblock %}
+
+{% block body %}
+    <h1>Create new Correspondre</h1>
+
+    {{ include('correspondre/_form.html.twig') }}
+
+    <a href="{{ path('correspondre_index') }}">back to list</a>
+{% endblock %}

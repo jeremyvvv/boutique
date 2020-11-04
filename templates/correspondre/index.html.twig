@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Correspondre index{% endblock %}
+
+{% block body %}
+    <h1>Correspondre index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Produit</th>
+                <th>Tag</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for correspondre in correspondres %}
+            <tr>
+                <td>{{ correspondre.id }}</td>
+                <td>{{ correspondre.idproduit }}</td>
+                <th>{{ correspondre.idtag }}</th>
+                <td>
+                    <a href="{{ path('correspondre_show', {'id': correspondre.id}) }}">show</a>
+                    <a href="{{ path('correspondre_edit', {'id': correspondre.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="2">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('correspondre_new') }}">Create new</a>
+{% endblock %}

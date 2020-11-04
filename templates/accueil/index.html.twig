@@ -8,15 +8,23 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/html/boutique/src/Controller/AccueilController.php'|file_link(0) }}">src/Controller/AccueilController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/html/boutique/templates/accueil/index.html.twig'|file_link(0) }}">templates/accueil/index.html.twig</a></code></li><br/>
-
-        <li>Pour vous déconnecter, cliquez ici ==><code><a href =" {{ path("app_logout") }}">déconnexion</a></code></li>
-    </ul>
+<div class="col-12">
+    <div class="row">
+        <div class="col-12">
+            <div class="jumbotron">
+                <div class="text text-center">
+                    Bienvenue sur la boutique de gommettes de jay akid
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        {% for i in 1..5 %}
+        <div class="col-1">
+            <img src="{{ asset('images/gommettes'~i~'.jpg') }}"
+                 class="rounded img-fluid " alt="gommettes rondes">
+        </div>
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}
