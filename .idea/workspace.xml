@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c0730ed-3b8b-4dba-99e3-f03a1eaee176" name="Default Changelist" comment="" />
+    <list default="true" id="4c0730ed-3b8b-4dba-99e3-f03a1eaee176" name="Default Changelist" comment="Premier commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +10,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -118,6 +121,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1jmsaU204cNgSpA3DYn84Wu56NT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -126,6 +130,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -138,24 +143,41 @@
       <updated>1604420664255</updated>
       <workItem from="1604420665340" duration="1560000" />
       <workItem from="1604485486757" duration="6221000" />
+      <workItem from="1604497252872" duration="626000" />
     </task>
+    <task id="LOCAL-00001" summary="Premier commit">
+      <created>1604497322194</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604497322194</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Premier commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Premier commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1736" height="856" key="DirDiffDialog" timestamp="1604495199270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DirDiffDialog/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604495199270" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1604497232936">
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1604497274639">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604497232936" />
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604497274639" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1604487901487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604487901487" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604497810716">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604497810716" />
   </component>
 </project>
