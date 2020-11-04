@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c0730ed-3b8b-4dba-99e3-f03a1eaee176" name="Default Changelist" comment="Premier commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AccueilController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccueilController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accueil/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accueil/index.html.twig" afterDir="false" />
+    <list default="true" id="4c0730ed-3b8b-4dba-99e3-f03a1eaee176" name="Default Changelist" comment="Commit 04/11/2020">
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +145,7 @@
       <updated>1604420664255</updated>
       <workItem from="1604420665340" duration="1560000" />
       <workItem from="1604485486757" duration="6221000" />
-      <workItem from="1604497252872" duration="1918000" />
+      <workItem from="1604497252872" duration="2213000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <created>1604497322194</created>
@@ -165,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604497894097</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit 04/11/2020">
+      <created>1604499261882</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604499261882</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +176,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Premier commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Premier commit" />
+    <MESSAGE value="Commit 04/11/2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 04/11/2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1736" height="856" key="DirDiffDialog" timestamp="1604498236571">
@@ -188,9 +192,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604487901487" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604497949320">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604499276271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604497949320" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604499276271" />
   </component>
 </project>
