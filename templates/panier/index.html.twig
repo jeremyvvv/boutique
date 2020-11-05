@@ -17,7 +17,7 @@
     <p>{{ dump(montant_total) }}</p>
     <p>{{ dump(date_creation) }}</p>
     <p>{{ dump(app.session.get('les_produits')) }}</p>
-
+    <table class="table">
     <thead>
     <tr>
         <th>Produit</th>
@@ -35,13 +35,14 @@
                 <a href="{{ path('contenir_edit', {'id': contenir.id}) }}">edit</a>
             </td>
         </tr>
+
     {% else %}
         <tr>
             <td colspan="3">no records found</td>
         </tr>
     {% endfor %}
     </tbody>
-
+    </table>
     {% if app.session.get('total_produit') > 0 %}<p><button type="button" class="btn btn-danger"><a href="{{ path('panier_remove') }}">Vider Panier</a></button></p>
     {% endif %}
 

@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Contenir;
 use App\Entity\Panier;
 use App\Entity\Produit;
+use App\Repository\ContenirRepository;
 use App\Repository\PanierRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use MongoDB\Driver\Session;
@@ -24,7 +25,7 @@ class PanierController extends AbstractController
      * @Route("/", name="panier_index")
      */
 
-    public function index(EntityManagerInterface $manager, SessionInterface $session): Response
+    public function index(EntityManagerInterface $manager, SessionInterface $session, ContenirRepository $contenirRepository): Response
     {
         $lesPanier = $manager->getRepository(Panier::class)->findAll();
 
@@ -52,6 +53,7 @@ class PanierController extends AbstractController
         $session->set("panierId", $lePanier->getId());
 
         return $this->render('panier/index.html.twig',[
+            'contenirs' => $contenirRepository->findAll(),
             'controller_name' => 'PanierController',
             'panier' => $lePanier,
             'date_creation' => $dateCreation,
@@ -77,7 +79,7 @@ class PanierController extends AbstractController
         }
         $session->set('total_produit', $session->get('total_produit')+1);
         $session->set('les_produits', $produits);
-        
+
 
         $lesPaniers = $manager->getRepository(Panier::class)->findAll();
 
@@ -133,6 +135,7 @@ class PanierController extends AbstractController
 
         $panier = $manager->getRepository(Panier::class)->find($session->get('panier'));
         $panier->setMontantTotal(0);
+        $contenir = $manager->getRepository(Contenir::class)->find($session->get('panier'));
         $session->clear();
 
 
