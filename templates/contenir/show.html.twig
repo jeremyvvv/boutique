@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contenir{% endblock %}
+
+{% block body %}
+    <h1>Contenir</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ contenir.id }}</td>
+            </tr>
+            <tr>
+                <th>Quantite</th>
+                <td>{{ contenir.quantite }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('contenir_index') }}">back to list</a>
+
+    <a href="{{ path('contenir_edit', {'id': contenir.id}) }}">edit</a>
+
+    {{ include('contenir/_delete_form.html.twig') }}
+{% endblock %}

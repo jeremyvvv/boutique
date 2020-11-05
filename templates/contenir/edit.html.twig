@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Contenir{% endblock %}
+
+{% block body %}
+    <h1>Edit Contenir</h1>
+
+    {{ include('contenir/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('contenir_index') }}">back to list</a>
+
+    {{ include('contenir/_delete_form.html.twig') }}
+{% endblock %}

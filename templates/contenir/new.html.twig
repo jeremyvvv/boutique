@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Contenir{% endblock %}
+
+{% block body %}
+    <h1>Create new Contenir</h1>
+
+    {{ include('contenir/_form.html.twig') }}
+
+    <a href="{{ path('contenir_index') }}">back to list</a>
+{% endblock %}
