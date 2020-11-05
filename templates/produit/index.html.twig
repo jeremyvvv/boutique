@@ -11,7 +11,7 @@
                 <th>Id</th>
                 <th>Libelle</th>
                 <th>Tarif</th>
-                <th>actions</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -23,6 +23,7 @@
                 <td>
                     <a href="{{ path('produit_show', {'id': produit.id}) }}">show</a>
                     <a href="{{ path('produit_edit', {'id': produit.id}) }}">edit</a>
+                    <div class="btn btn-warning"><a href="{{ path('panier_add', {'id':produit.id}) }}">+</a> </div>
                 </td>
             </tr>
         {% else %}
