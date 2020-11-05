@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c0730ed-3b8b-4dba-99e3-f03a1eaee176" name="Default Changelist" comment="Commit 04/11/2020">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/produit/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/produit/index.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="4c0730ed-3b8b-4dba-99e3-f03a1eaee176" name="Default Changelist" comment="Commit 05/11/2020" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,7 +168,7 @@
       <workItem from="1604485486757" duration="6221000" />
       <workItem from="1604497252872" duration="9663000" />
       <workItem from="1604508047624" duration="390000" />
-      <workItem from="1604564476550" duration="10024000" />
+      <workItem from="1604564476550" duration="10800000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <created>1604497322194</created>
@@ -192,16 +205,35 @@
       <option name="project" value="LOCAL" />
       <updated>1604507915138</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Commit 05/11/2020">
+      <created>1604576669324</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604576669324</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Premier commit" />
     <MESSAGE value="Commit 04/11/2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 04/11/2020" />
+    <MESSAGE value="Commit 05/11/2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 05/11/2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="726" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604500502017">
@@ -220,9 +252,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604487901487" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604507924269">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604576819601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604507924269" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604576819601" />
   </component>
 </project>
