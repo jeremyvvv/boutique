@@ -135,12 +135,12 @@ class PanierController extends AbstractController
 
         $panier = $manager->getRepository(Panier::class)->find($session->get('panier'));
         $panier->setMontantTotal(0);
-        $contenir = $manager->getRepository(Contenir::class)->find($session->get('panier'));
+        $contenir = $manager->getRepository(Contenir::class);//->find($session->get('panier'));
+        $contenir->deleteTuples($session);
         $session->clear();
 
 
         $manager->flush();
-
         return $this->redirectToRoute('panier_index');
     }
 }

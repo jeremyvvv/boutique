@@ -22,7 +22,7 @@
     <list default="true" id="4c0730ed-3b8b-4dba-99e3-f03a1eaee176" name="Default Changelist" comment="Commit 05/11/2020">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/PanierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PanierController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/panier/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/panier/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ContenirRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ContenirRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +172,8 @@
       <workItem from="1604485486757" duration="6221000" />
       <workItem from="1604497252872" duration="9663000" />
       <workItem from="1604508047624" duration="390000" />
-      <workItem from="1604564476550" duration="23201000" />
+      <workItem from="1604564476550" duration="23224000" />
+      <workItem from="1605626427911" duration="4652000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <created>1604497322194</created>
@@ -230,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604594282963</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Commit 05/11/2020">
+      <created>1604594765013</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604594765013</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +254,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Premier commit" />
@@ -274,9 +283,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604487901487" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604594289511">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604594769425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604594289511" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604594769425" />
   </component>
 </project>
