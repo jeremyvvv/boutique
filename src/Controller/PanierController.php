@@ -70,13 +70,9 @@ class PanierController extends AbstractController
     public function add(EntityManagerInterface $manager,Produit $produit,SessionInterface $session): RedirectResponse
     {
         //$session->clear();
-
-        $produits = $session->get('les_produits',array());
-        $nbp = count($produits);
-
-        $lesPaniers = $manager->getRepository(Panier::class)->findAll();
         $contenir = new Contenir();
-
+        $produits = $session->get('les_produits',array());
+        $lesPaniers = $manager->getRepository(Panier::class)->findAll();
 
         if (count($lesPaniers)==0){
             //je créé le panier
@@ -86,12 +82,14 @@ class PanierController extends AbstractController
 
             $manager->persist($panier);
             $manager->flush();
+
         }
         else{
             //je récupère l'id du premier panier
             $panier = $lesPaniers[0];
-            }
 
+            }
+        //si le produit voulu n'est pas dans le panier, on le rajoute
         if(!isset($produits[$produit->getId()])){
             $produits[ $produit->getId()]["objProduit"]=$produit;
             $produits[ $produit->getId()]["quantite"]=1;
@@ -101,13 +99,15 @@ class PanierController extends AbstractController
             $contenir->setQuantite(1);
             $manager->persist($contenir);
         } else {
-            //dump($produits);
-            $produits[ $produit->getId()]["quantite"]++;
-            $contenir = $manager->getRepository(Contenir::class)->findAll();
-            $contenir[0]->setQuantite($contenir[0]->getQuantite()+1);
+            //si le produit voulu est déjà dans le panier, on y ajoute 1 à la quantité
+
+            $qte = $produits[ $produit->getId()]["quantite"];
+            $qte++;
+            $produits[ $produit->getId()]["quantite"] = $qte;
+            $contenirClass = $manager->getRepository(Contenir::class)->findAll();
+            $contenirClass[0]->setQuantite($qte);
             $manager->flush();
-            //dump($produits );
-            //die();
+
         }
 
 
