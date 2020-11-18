@@ -7,6 +7,7 @@ use App\Entity\Panier;
 use App\Entity\Produit;
 use App\Repository\ContenirRepository;
 use App\Repository\PanierRepository;
+use App\Repository\ProduitRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use MongoDB\Driver\Session;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -25,7 +26,7 @@ class PanierController extends AbstractController
      * @Route("/", name="panier_index")
      */
 
-    public function index(EntityManagerInterface $manager, SessionInterface $session, ContenirRepository $contenirRepository): Response
+    public function index(EntityManagerInterface $manager, SessionInterface $session, ContenirRepository $contenirRepository, ProduitRepository $produitRepository): Response
     {
         $lesPanier = $manager->getRepository(Panier::class)->findAll();
 
@@ -53,6 +54,7 @@ class PanierController extends AbstractController
         $session->set("panierId", $lePanier->getId());
 
         return $this->render('panier/index.html.twig',[
+            'produits' => $produitRepository->findAll(),
             'contenirs' => $contenirRepository->findAll(),
             'controller_name' => 'PanierController',
             'panier' => $lePanier,
@@ -71,17 +73,10 @@ class PanierController extends AbstractController
 
         $produits = $session->get('les_produits',array());
         $nbp = count($produits);
-        if(!isset($produits[$produit->getId()])){
-            $produits[ $produit->getId()]["objProduit"]=$produit;
-            $produits[ $produit->getId()]["quantite"]=1;
-        } else {
-            $produits[ $produit->getId()]["quantite"]++;
-        }
-        $session->set('total_produit', $session->get('total_produit')+1);
-        $session->set('les_produits', $produits);
-
 
         $lesPaniers = $manager->getRepository(Panier::class)->findAll();
+        $contenir = new Contenir();
+
 
         if (count($lesPaniers)==0){
             //je créé le panier
@@ -95,18 +90,35 @@ class PanierController extends AbstractController
         else{
             //je récupère l'id du premier panier
             $panier = $lesPaniers[0];
+            }
+
+        if(!isset($produits[$produit->getId()])){
+            $produits[ $produit->getId()]["objProduit"]=$produit;
+            $produits[ $produit->getId()]["quantite"]=1;
+
+            $contenir->setIdPanier($panier);
+            $contenir->setIdProduit($produit);
+            $contenir->setQuantite(1);
+            $manager->persist($contenir);
+        } else {
+            //dump($produits);
+            $produits[ $produit->getId()]["quantite"]++;
+            $contenir = $manager->getRepository(Contenir::class)->findAll();
+            $contenir[0]->setQuantite($contenir[0]->getQuantite()+1);
+            $manager->flush();
+            //dump($produits );
+            //die();
         }
+
+
+        $panier->setMontantTotal($panier->getMontantTotal() + $produit->getTarif());
+        $manager->flush();
+
+        $session->set('total_produit', $session->get('total_produit')+1);
+        $session->set('les_produits', $produits);
+
         $session->set('panier', $panier);
 
-        $contenir = new Contenir();
-        $contenir->setIdPanier($panier);
-        $contenir->setIdProduit($produit);
-        $contenir->setQuantite($produits[$produit->getId()]["quantite"]);
-        $panier->setMontantTotal($panier->getMontantTotal() + $produit->getTarif());
-
-        $manager->persist($panier);
-        $manager->persist($contenir);
-        $manager->flush();
 
         return $this->redirectToRoute('produit_index');
     }
