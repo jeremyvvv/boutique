@@ -104,8 +104,8 @@ class PanierController extends AbstractController
             $qte = $produits[ $produit->getId()]["quantite"];
             $qte++;
             $produits[ $produit->getId()]["quantite"] = $qte;
-            $contenirClass = $manager->getRepository(Contenir::class)->findAll();
-            $contenirClass[0]->setQuantite($qte);
+            $contenir = $manager->getRepository(Contenir::class)->findAll();
+            $contenir[0]->setQuantite($qte);
             $manager->flush();
 
         }

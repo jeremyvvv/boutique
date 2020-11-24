@@ -34,6 +34,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -174,7 +175,8 @@
       <workItem from="1604564476550" duration="23224000" />
       <workItem from="1605626427911" duration="5121000" />
       <workItem from="1605694803014" duration="7606000" />
-      <workItem from="1605713306967" duration="1563000" />
+      <workItem from="1605713306967" duration="1589000" />
+      <workItem from="1606233139676" duration="1424000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <created>1604497322194</created>
@@ -253,11 +255,28 @@
       <option name="project" value="LOCAL" />
       <updated>1605713276920</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Commit 18/11/2020">
+      <created>1605714987628</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1605714987628</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -288,6 +307,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604594377379" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1606234085380">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606234085380" />
     <state x="92" y="92" width="1736" height="856" key="DirDiffDialog" timestamp="1604593907039">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -296,13 +319,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604497274639" />
+    <state x="752" y="222" key="RollbackChangesDialog" timestamp="1606233979947">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606233979947" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1604487901487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604487901487" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605713281550">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605714990485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1605713281550" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1605714990485" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606233958388">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606233958388" />
   </component>
 </project>
