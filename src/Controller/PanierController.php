@@ -102,12 +102,13 @@ class PanierController extends AbstractController
         } else {
             //si le produit voulu est déjà dans le panier, on y ajoute 1 à la quantité
 
-            $qte = $produits[$produit->getId()]["quantite"];
-            $qte++;
             $produits[ $produit->getId()]["quantite"] = $qte;
-            $contenirs = $manager->getRepository(Contenir::class)->findAll();
-
-            $contenirs[0]->setQuantite($qte);
+            $contenir = $manager->getRepository(Contenir::class)->findAll();
+            foreach ($contenir as $key => $unProduit){
+                if($unProduit->getIdProduit()->getId() == $produit->getId()){
+                    $contenir[$key]->setQuantite($contenir[$key]->getQuantite()+1);
+                }
+            }
             $manager->flush();
 
         }

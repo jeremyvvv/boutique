@@ -19,13 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c0730ed-3b8b-4dba-99e3-f03a1eaee176" name="Default Changelist" comment="Commit 24/11/2020">
-      <change afterPath="$PROJECT_DIR$/public/images/fauteuil1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/fauteuil2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/fauteuil3.jpg" afterDir="false" />
+    <list default="true" id="4c0730ed-3b8b-4dba-99e3-f03a1eaee176" name="Default Changelist" comment="Commit 01/12/2020">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/PanierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PanierController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accueil/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accueil/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +177,7 @@
       <workItem from="1605694803014" duration="7606000" />
       <workItem from="1605713306967" duration="1589000" />
       <workItem from="1606233139676" duration="2255000" />
-      <workItem from="1606836208809" duration="4326000" />
+      <workItem from="1606836208809" duration="4701000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <created>1604497322194</created>
@@ -274,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606234577041</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Commit 01/12/2020">
+      <created>1606840999958</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1606840999958</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +312,8 @@
     <MESSAGE value="PPE4 17/11/2020" />
     <MESSAGE value="Commit 18/11/2020" />
     <MESSAGE value="Commit 24/11/2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 24/11/2020" />
+    <MESSAGE value="Commit 01/12/2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 01/12/2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="726" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604500502017">
