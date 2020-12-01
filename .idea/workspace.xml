@@ -19,9 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c0730ed-3b8b-4dba-99e3-f03a1eaee176" name="Default Changelist" comment="Commit 18/11/2020">
+    <list default="true" id="4c0730ed-3b8b-4dba-99e3-f03a1eaee176" name="Default Changelist" comment="Commit 24/11/2020">
+      <change afterPath="$PROJECT_DIR$/public/images/fauteuil1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fauteuil2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fauteuil3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/PanierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PanierController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accueil/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accueil/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +180,8 @@
       <workItem from="1605626427911" duration="5121000" />
       <workItem from="1605694803014" duration="7606000" />
       <workItem from="1605713306967" duration="1589000" />
-      <workItem from="1606233139676" duration="1424000" />
+      <workItem from="1606233139676" duration="2255000" />
+      <workItem from="1606836208809" duration="4326000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <created>1604497322194</created>
@@ -262,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605714987628</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Commit 24/11/2020">
+      <created>1606234577041</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1606234577041</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +308,8 @@
     <MESSAGE value="Commit 05/11/2020" />
     <MESSAGE value="PPE4 17/11/2020" />
     <MESSAGE value="Commit 18/11/2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 18/11/2020" />
+    <MESSAGE value="Commit 24/11/2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 24/11/2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="726" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604500502017">
@@ -327,10 +340,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604487901487" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605714990485">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606234581532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1605714990485" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606234581532" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606233958388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

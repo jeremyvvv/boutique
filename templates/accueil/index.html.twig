@@ -13,17 +13,21 @@
         <div class="col-12">
             <div class="jumbotron">
                 <div class="text text-center">
-                    Bienvenue sur la boutique de gommettes de jay akid
+                    Bienvenue sur la boutique de fauteuils JayAKid
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
-        {% for i in 1..5 %}
-        <div class="col-1">
-            <img src="{{ asset('images/gommettes'~i~'.jpg') }}"
-                 class="rounded img-fluid " alt="gommettes rondes">
-        </div>
+        {% for i in 1..3 %}
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ asset('images/fauteuil'~i~'.jpg') }}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Fauteuil</h5>
+                    <p class="card-text">Voici un fauteuil</p>
+                    <a href="#" class="btn btn-primary">Cliquer ici ne fera rien du tout</a>
+                </div>
+            </div>
         {% endfor %}
     </div>
 </div>
