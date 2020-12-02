@@ -20,14 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c0730ed-3b8b-4dba-99e3-f03a1eaee176" name="Default Changelist" comment="Commit 02/12/2020">
-      <change afterPath="$PROJECT_DIR$/public/images/chaisebois.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/fauteuilnoir.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fauteuilbanner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fauteuilbanner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fauteuilbanner3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fauteuilbleu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/fauteuil1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fauteuilgris.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/fauteuil2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/fauteuil3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/fauteuil4.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/accueil/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accueil/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/produit/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/produit/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/produit/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/produit/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +39,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -158,6 +167,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -187,7 +197,7 @@
       <workItem from="1605713306967" duration="1589000" />
       <workItem from="1606233139676" duration="2255000" />
       <workItem from="1606836208809" duration="4782000" />
-      <workItem from="1606904290650" duration="8467000" />
+      <workItem from="1606904290650" duration="15876000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <created>1604497322194</created>
@@ -308,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606910087514</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Commit 02/12/2020">
+      <created>1606917745344</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1606917745344</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,10 +397,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604487901487" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606910091270">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606917750934">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1606910091270" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1606917750934" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606234581532" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606233958388">
       <screen x="0" y="0" width="1920" height="1040" />
