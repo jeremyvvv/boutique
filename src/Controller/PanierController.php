@@ -125,7 +125,7 @@ class PanierController extends AbstractController
         $session->set('panier', $panier);
 
 
-        return $this->redirectToRoute('produit_index');
+        return $this->redirectToRoute('produit_show', ['id'=>$produit->getId()]);
     }
 
     /**

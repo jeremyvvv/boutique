@@ -7,6 +7,7 @@
 
     <div class="row">
         {% for p in produits %}
+            <div class="col-2">
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="{{ asset('')~p.image }}" alt="Card image cap">
                 <div class="card-body">
@@ -15,6 +16,7 @@
                     <p class="card-text">{{ p.description }}</p>
                     <a href="{{ path('produit_show', {'id': p.id}) }}" class="btn btn-primary ">Cliquer ici ne fera rien du tout</a>
                 </div>
+            </div>
             </div>
         {% endfor %}
     </div>

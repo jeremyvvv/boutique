@@ -28,7 +28,7 @@
             <h3 class="card-title">{{ produit.libelle }}</h3>
             <h4>{{ produit.tarif }}€</h4>
             <p class="card-text">{{ produit.description }}</p>
-              <div class="float-right"><button type="button" class="btn btn-warning">Ajouter au panier</button></div><br>
+              <div class="float-right"><button type="button" class="btn btn-warning"><a href="{{ path('panier_add', {'id': produit.id}) }}">Ajouter au panier</a></button></div><br>
 
             <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
             4.0 stars
