@@ -8,13 +8,15 @@
     <div class="row">
         {% for p in produits %}
             <div class="col-2">
-            <div class="card" style="width: 18rem;">
+            <div class="card h-100" style="width: 18rem;">
                 <img class="card-img-top" src="{{ asset('')~p.image }}" alt="Card image cap">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title">{{ p.libelle }}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">{{ p.tarif }}€</h6>
                     <p class="card-text">{{ p.description }}</p>
-                    <a href="{{ path('produit_show', {'id': p.id}) }}" class="btn btn-primary ">Cliquer ici ne fera rien du tout</a>
+
+                    <a href="{{ path('produit_show', {'id': p.id}) }}" class="mt-auto btn btn-primary ">Voir le produit</a>
+
                 </div>
             </div>
             </div>

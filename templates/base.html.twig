@@ -3,7 +3,7 @@
     <head>
         {% block head_css %}
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-            <link rel="stylesheet" href="public/style.css">
+            <link rel="stylesheet" href="style.css">
         {% endblock %}
         {% block head_js %}
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -51,7 +51,11 @@
             </ul>
             <ul class="navbar-nav mr-right mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <button type="button" class="btn btn-info"><a class="nav-link" href="{{  path("panier_index") }}">Panier {{ app.session.get('total_produit') }} <span class="sr-only">(current)</span></a>
+                    <button class="btn btn-info btn-lg" type="button">
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <a href="{{  path("panier_index") }}">
+                             Panier {{ app.session.get('total_produit') }}
+                        </a>
                     </button>
                 </li>
             </ul>

@@ -3,52 +3,68 @@
 {% block title %}Hello PanierController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <div class="container mb-4">
+        <div class="row">
+            {% if app.session.get('total_produit') > 0 %}
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col"> </th>
+                            <th scope="col">Produit</th>
+                            <th scope="col">Disponibilité</th>
+                            <th scope="col" class="text-center">Quantité</th>
+                            <th scope="col" class="text-right">Prix</th>
+                            <th> </th>
+                        </tr>
+                        </thead>
+                        <tbody>
 
-<div class="example-wrapper">
-    <h1>Bonjour, voici le panier! ✅</h1>
+                        {% for contenir in contenirs %}
+                        <tr>
+                            <td><img src="{{ asset('')~contenir.idproduit.image }}" style="width: 90px; height: 90px;"/> </td>
+                            <td>{{ contenir.idproduit }}</td>
+                            <td>In stock</td>
+                            <td class="text-center">{{ contenir.quantite }}</td>
+                            <td class="text-right">{{ contenir.idproduit.tarif * contenir.quantite}}€</td>
+                            <td class="text-right"><button type="button" class="btn btn-warning"><a href="{{ path('panier_add2', {'id': contenir.idproduit.id}) }}">+</a></button></td>
+                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                        </tr>
+                        {% endfor %}
 
-    This friendly message is coming from:
-
-    <p>{{ dump(panier) }}</p>
-    <p>{{ dump(montant_total) }}</p>
-    <p>{{ dump(date_creation) }}</p>
-    <p>{{ dump(app.session.get('les_produits')) }}</p>
-    <table class="table">
-    <thead>
-    <tr>
-        <th>Produit</th>
-        <th>Quantite</th>
-        <th>Prix</th>
-        <th>actions</th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for contenir in contenirs %}
-
-        <tr>
-            <td>{{ contenir.idproduit }}</td>
-            <td>{{ contenir.quantite }}</td>
-            <td></td>
-            <td>
-                <a href="{{ path('contenir_show', {'id': contenir.id}) }}">show</a>
-                <a href="{{ path('contenir_edit', {'id': contenir.id}) }}">edit</a>
-            </td>
-        </tr>
-
-    {% else %}
-        <tr>
-            <td colspan="3">no records found</td>
-        </tr>
-    {% endfor %}
-
-    </tbody>
-    </table>
-    {% if app.session.get('total_produit') > 0 %}<p><button type="button" class="btn btn-danger"><a href="{{ path('panier_remove') }}">Vider Panier</a></button></p>
-    {% endif %}
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong>Total</strong></td>
+                            <td class="text-right"><strong>{{ app.session.get('panier').montantTotal }}€</strong></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col mb-2">
+                <div class="row">
+                    <div class="col-sm-12  col-md-6">
+                        <button class="btn btn-block btn-light"><a href="{{ path('produit_index') }}">Continue Shopping</a></button>
+                    </div>
+                    <div class="col-sm-12 col-md-6 text-right">
+                        <button class="btn btn-lg btn-block btn-success text-uppercase">Checkout</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12  col-md-6 ">
+                    <button type="button" class="btn btn-danger"><a href="{{ path('panier_remove') }}">Vider Panier</a></button>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+                <div class="text-center"><h1>Votre panier est vide !</h1> </div>
+            {% endif %}
+        </div>
+    </div>
 
 </div>
 {% endblock %}
