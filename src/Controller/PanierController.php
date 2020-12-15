@@ -15,6 +15,7 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * @Route("/panier")
@@ -201,6 +202,7 @@ class PanierController extends AbstractController
      */
     public function remove(EntityManagerInterface $manager, SessionInterface $session): RedirectResponse
     {
+
         $lesPaniers = $manager->getRepository(Panier::class)->findAll();
         if (count($lesPaniers)==0){
             //je créé le panier
@@ -229,34 +231,29 @@ class PanierController extends AbstractController
         return $this->redirectToRoute('panier_index');
     }
 
-    /**
-     * @Route("/removeone", name="panier_removeone")
-     */
-    public function removeone(EntityManagerInterface $manager, SessionInterface $session): RedirectResponse
-    {
-        $lesPaniers = $manager->getRepository(Panier::class)->findAll();
-        if (count($lesPaniers)==0){
-            //je créé le panier
-            $panier = new Panier();
-            $panier->setMontantTotal(0);
-            $panier->setDateCreation(date("Y/m/d"));
 
-            $manager->persist($panier);
-            $manager->flush();
+    /**
+     * @Route("/{id}", name="panier_removeone", methods={"DELETE"})
+     */
+    public function removeOne(EntityManagerInterface $manager, SessionInterface $session, Contenir $contenir, Request $request): RedirectResponse
+    {
+
+        $lesPaniers = $manager->getRepository(Panier::class)->findAll();
+        if ($this->isCsrfTokenValid('delete'.$contenir->getId(), $request->request->get('_token'))) {
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->remove($contenir);
+            $entityManager->flush();
         }
-        else{
-            //je récupère l'id du premier panier
-            $panier = $lesPaniers[0];
-        }
+
+        //je récupère l'id du premier panier
+        $panier = $lesPaniers[0];
+
         $session->set('panier', $panier);
         $session->set('total_produit', 0);
 
         $panier = $manager->getRepository(Panier::class)->find($session->get('panier'));
         $panier->setMontantTotal(0);
-        $contenir = $manager->getRepository(Contenir::class);//->find($session->get('panier'));
-        $contenir->deleteTuples($session);
         $session->clear();
-
 
         $manager->flush();
         return $this->redirectToRoute('panier_index');

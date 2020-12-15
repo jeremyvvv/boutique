@@ -36,6 +36,20 @@ public function deleteTuples(SessionInterface $session){
     $query->execute();
 
 }
+
+   // public function deleteOneTuples(SessionInterface $session, Contenir $content){
+   //     $queryBuilder = $this->createQueryBuilder('delete');
+   //     $queryBuilder->update(Contenir::class, 'c')
+   //         ->set('c.quantite', ':qte')
+//            ->setParameter('qte', $content->getQuantite() - 1)
+   //         ->setParameter('id', $session->get('panierId'))
+    //        ->setParameter('id2', $session->get('produit'));
+
+    //    $query = $queryBuilder->getQuery();
+
+    //    $query->execute();
+
+  //  }
     // /**
     //  * @return Contenir[] Returns an array of Contenir objects
     //  */

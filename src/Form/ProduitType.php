@@ -14,7 +14,10 @@ class ProduitType extends AbstractType
         $builder
             ->add('libelle')
             ->add('tarif')
+            ->add('description')
             ->add('id_categorie')
+            ->add('image')
+
         ;
     }
 

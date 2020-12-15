@@ -29,7 +29,11 @@
                             <td class="text-center">{{ contenir.quantite }}</td>
                             <td class="text-right">{{ contenir.idproduit.tarif * contenir.quantite}}€</td>
                             <td class="text-right"><button type="button" class="btn btn-warning"><a href="{{ path('panier_add2', {'id': contenir.idproduit.id}) }}">+</a></button></td>
-                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                            <td class="text-center"><form method="post" action="{{ path('panier_removeone', {'id': contenir.id}) }}" onsubmit="return confirm('Are you sure you want to delete this item?');">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ contenir.id) }}">
+                                    <button class="btn btn-sm btn-danger">Supprimer l'article</button>
+                                </form></td>
                         </tr>
                         {% endfor %}
 
