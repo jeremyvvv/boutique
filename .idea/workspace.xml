@@ -19,14 +19,32 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c0730ed-3b8b-4dba-99e3-f03a1eaee176" name="Default Changelist" comment="Commit 03/12/2020">
+    <list default="true" id="4c0730ed-3b8b-4dba-99e3-f03a1eaee176" name="Default Changelist" comment="Commit 15/12/2020">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PanierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PanierController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CategorieController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ContenirController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CorrespondreController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TagController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/ProduitType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProduitType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ContenirRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ContenirRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contenir/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contenir/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/panier/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/panier/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/produit/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/produit/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/categorie/_delete_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/categorie/_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/categorie/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/categorie/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/categorie/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/categorie/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/correspondre/_delete_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/correspondre/_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/correspondre/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/correspondre/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/correspondre/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/correspondre/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tag/_delete_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tag/_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tag/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tag/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tag/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tag/show.html.twig" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +215,10 @@
       <workItem from="1606836208809" duration="4782000" />
       <workItem from="1606904290650" duration="17806000" />
       <workItem from="1606991536357" duration="12971000" />
-      <workItem from="1608038948850" duration="9495000" />
+      <workItem from="1608038948850" duration="9718000" />
+      <workItem from="1608113360593" duration="660000" />
+      <workItem from="1614695918920" duration="2670000" />
+      <workItem from="1614773552384" duration="2662000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <created>1604497322194</created>
@@ -353,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607014024618</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Commit 15/12/2020">
+      <created>1608050495215</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1608050495216</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,37 +419,37 @@
     <MESSAGE value="Commit 01/12/2020" />
     <MESSAGE value="Commit 02/12/2020" />
     <MESSAGE value="Commit 03/12/2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 03/12/2020" />
+    <MESSAGE value="Commit 15/12/2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 15/12/2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="714" y="344" key="#Notifications" timestamp="1606925737633">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="344" key="#Notifications/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1606925737633" />
-    <state x="726" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604500502017">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="726" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604500502017" />
     <state x="753" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1606909600802">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="753" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1606909600802" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608045725761">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1614775511244">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1608045725761" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1606234085380">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614775511244" />
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1614774189906">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614774189906" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606234085380" />
-    <state x="92" y="92" width="1736" height="856" key="DirDiffDialog" timestamp="1606917405569">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2012" y="92" width="1736" height="856" key="DirDiffDialog" timestamp="1614775216348">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DirDiffDialog/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1606917405569" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1604497274639">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2012" y="92" width="1736" height="856" key="DirDiffDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614775216348" />
+    <state x="2617" y="243" key="NewPhpClassDialog" timestamp="1614774387553">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1604497274639" />
+    <state x="2617" y="243" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614774387553" />
     <state x="752" y="222" key="RollbackChangesDialog" timestamp="1606233979947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -434,11 +462,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1607001989084" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607014026968">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608050700605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1607014026968" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1608050700605" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606234581532" />
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1614774189907">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614774189907" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606233958388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
