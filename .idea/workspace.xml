@@ -19,33 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c0730ed-3b8b-4dba-99e3-f03a1eaee176" name="Default Changelist" comment="Commit 15/12/2020">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CategorieController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ContenirController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CorrespondreController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TagController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ProduitType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProduitType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/categorie/_delete_form.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/categorie/_form.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/categorie/edit.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/categorie/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/categorie/new.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/categorie/show.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/correspondre/_delete_form.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/correspondre/_form.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/correspondre/edit.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/correspondre/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/correspondre/new.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/correspondre/show.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tag/_delete_form.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tag/_form.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tag/edit.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tag/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tag/new.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tag/show.html.twig" beforeDir="false" />
-    </list>
+    <list default="true" id="4c0730ed-3b8b-4dba-99e3-f03a1eaee176" name="Default Changelist" comment="Commit 15/12/2020" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,7 +192,7 @@
       <workItem from="1608038948850" duration="9718000" />
       <workItem from="1608113360593" duration="660000" />
       <workItem from="1614695918920" duration="2670000" />
-      <workItem from="1614773552384" duration="2662000" />
+      <workItem from="1614773552384" duration="2803000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit">
       <created>1604497322194</created>
@@ -381,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608050495216</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="03/03/2021">
+      <created>1614781862422</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1614781862422</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,7 +401,8 @@
     <MESSAGE value="Commit 02/12/2020" />
     <MESSAGE value="Commit 03/12/2020" />
     <MESSAGE value="Commit 15/12/2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 15/12/2020" />
+    <MESSAGE value="03/03/2021" />
+    <option name="LAST_COMMIT_MESSAGE" value="03/03/2021" />
   </component>
   <component name="WindowStateProjectService">
     <state x="714" y="344" key="#Notifications" timestamp="1606925737633">
@@ -462,10 +444,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1607001989084" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608050700605">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1614781921888">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.2.1920.1040@0.0.1920.1040" timestamp="1608050700605" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614781921888" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606234581532" />
     <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1614774189907">
       <screen x="1920" y="0" width="1920" height="1040" />
